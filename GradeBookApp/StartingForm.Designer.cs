@@ -46,6 +46,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lbl_ProfessorTitle = new System.Windows.Forms.Label();
             this.lbl_LoggedAsMsg = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.userControl_Classes1 = new GradeBookApp.UserControl_Classes();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_HeaderImage)).BeginInit();
             this.panel_ProfessorInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_ProfessorPicture)).BeginInit();
@@ -89,6 +91,7 @@
             this.btn_ManageClasses.TabIndex = 3;
             this.btn_ManageClasses.Text = "Classes";
             this.btn_ManageClasses.UseVisualStyleBackColor = true;
+            this.btn_ManageClasses.Click += new System.EventHandler(this.btn_ManageClasses_Click);
             // 
             // btn_NewStudent
             // 
@@ -217,6 +220,14 @@
             this.lbl_LoggedAsMsg.Text = "Logged as: ";
             this.lbl_LoggedAsMsg.Click += new System.EventHandler(this.label4_Click);
             // 
+            // userControl_Classes1
+            // 
+            this.userControl_Classes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.userControl_Classes1.Location = new System.Drawing.Point(226, 169);
+            this.userControl_Classes1.Name = "userControl_Classes1";
+            this.userControl_Classes1.Size = new System.Drawing.Size(762, 395);
+            this.userControl_Classes1.TabIndex = 9;
+            // 
             // StartingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,6 +243,7 @@
             this.Controls.Add(this.lbl_HeaderText);
             this.Controls.Add(this.picBox_HeaderImage);
             this.Controls.Add(this.btn_ExitApp);
+            this.Controls.Add(this.userControl_Classes1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StartingForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -264,6 +276,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbl_ProfessorUniversity;
         private System.Windows.Forms.Label lbl_LoggedAsMsg;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private UserControl_Classes userControl_Classes1;
     }
 }
 

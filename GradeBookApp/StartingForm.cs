@@ -15,6 +15,9 @@ namespace GradeBookApp
         public StartingForm()
         {
             InitializeComponent();
+
+            userControl_Classes1.Visible = false;
+
         }
 
         private void btn_ExitApp_Click(object sender, EventArgs e)
@@ -30,6 +33,13 @@ namespace GradeBookApp
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_ManageClasses_Click(object sender, EventArgs e)
+        {
+            userControl_Classes1.BringToFront();
+            userControl_Classes1.Visible = true;
+            
         }
     }
 }
