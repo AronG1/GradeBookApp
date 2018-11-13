@@ -41,5 +41,10 @@ namespace GradeBookApp
             userControl_Classes1.Visible = true;
             
         }
+
+        private void btn_LogIn_Click(object sender, EventArgs e)
+        {
+            // @TODO: open new form for log in
+        }
     }
 }

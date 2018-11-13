@@ -37,16 +37,15 @@
             this.btn_ChangeStudentProperties = new System.Windows.Forms.Button();
             this.btn_StudentWithdraw = new System.Windows.Forms.Button();
             this.panel_ProfessorInfo = new System.Windows.Forms.Panel();
-            this.btn_LogIn = new System.Windows.Forms.Button();
-            this.picBox_ProfessorPicture = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbl_ProfessorFullName = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbl_ProfessorUniversity = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbl_ProfessorTitle = new System.Windows.Forms.Label();
             this.lbl_LoggedAsMsg = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.lbl_ProfessorTitle = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_ProfessorUniversity = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_ProfessorFullName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.picBox_ProfessorPicture = new System.Windows.Forms.PictureBox();
+            this.btn_LogIn = new System.Windows.Forms.Button();
             this.userControl_Classes1 = new GradeBookApp.UserControl_Classes();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_HeaderImage)).BeginInit();
             this.panel_ProfessorInfo.SuspendLayout();
@@ -136,41 +135,43 @@
             this.panel_ProfessorInfo.Size = new System.Drawing.Size(227, 319);
             this.panel_ProfessorInfo.TabIndex = 7;
             // 
-            // btn_LogIn
+            // lbl_LoggedAsMsg
             // 
-            this.btn_LogIn.Location = new System.Drawing.Point(12, 509);
-            this.btn_LogIn.Name = "btn_LogIn";
-            this.btn_LogIn.Size = new System.Drawing.Size(125, 40);
-            this.btn_LogIn.TabIndex = 8;
-            this.btn_LogIn.Text = "Log in";
-            this.btn_LogIn.UseVisualStyleBackColor = true;
+            this.lbl_LoggedAsMsg.AutoSize = true;
+            this.lbl_LoggedAsMsg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_LoggedAsMsg.Location = new System.Drawing.Point(10, 21);
+            this.lbl_LoggedAsMsg.Name = "lbl_LoggedAsMsg";
+            this.lbl_LoggedAsMsg.Size = new System.Drawing.Size(79, 16);
+            this.lbl_LoggedAsMsg.TabIndex = 7;
+            this.lbl_LoggedAsMsg.Text = "Logged as: ";
+            this.lbl_LoggedAsMsg.Click += new System.EventHandler(this.label4_Click);
             // 
-            // picBox_ProfessorPicture
+            // lbl_ProfessorTitle
             // 
-            this.picBox_ProfessorPicture.Image = ((System.Drawing.Image)(resources.GetObject("picBox_ProfessorPicture.Image")));
-            this.picBox_ProfessorPicture.Location = new System.Drawing.Point(71, 53);
-            this.picBox_ProfessorPicture.Name = "picBox_ProfessorPicture";
-            this.picBox_ProfessorPicture.Size = new System.Drawing.Size(70, 70);
-            this.picBox_ProfessorPicture.TabIndex = 0;
-            this.picBox_ProfessorPicture.TabStop = false;
+            this.lbl_ProfessorTitle.AutoSize = true;
+            this.lbl_ProfessorTitle.Location = new System.Drawing.Point(77, 199);
+            this.lbl_ProfessorTitle.Name = "lbl_ProfessorTitle";
+            this.lbl_ProfessorTitle.Size = new System.Drawing.Size(84, 13);
+            this.lbl_ProfessorTitle.TabIndex = 6;
+            this.lbl_ProfessorTitle.Text = "Senior Professor";
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 146);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Full name: ";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 199);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Title: ";
             // 
-            // lbl_ProfessorFullName
+            // lbl_ProfessorUniversity
             // 
-            this.lbl_ProfessorFullName.AutoSize = true;
-            this.lbl_ProfessorFullName.Location = new System.Drawing.Point(77, 146);
-            this.lbl_ProfessorFullName.Name = "lbl_ProfessorFullName";
-            this.lbl_ProfessorFullName.Size = new System.Drawing.Size(56, 13);
-            this.lbl_ProfessorFullName.TabIndex = 2;
-            this.lbl_ProfessorFullName.Text = "Pero Peric";
+            this.lbl_ProfessorUniversity.AutoSize = true;
+            this.lbl_ProfessorUniversity.Location = new System.Drawing.Point(78, 172);
+            this.lbl_ProfessorUniversity.Name = "lbl_ProfessorUniversity";
+            this.lbl_ProfessorUniversity.Size = new System.Drawing.Size(45, 13);
+            this.lbl_ProfessorUniversity.TabIndex = 4;
+            this.lbl_ProfessorUniversity.Text = "Harvard";
             // 
             // label2
             // 
@@ -182,43 +183,42 @@
             this.label2.Text = "University: ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // lbl_ProfessorUniversity
+            // lbl_ProfessorFullName
             // 
-            this.lbl_ProfessorUniversity.AutoSize = true;
-            this.lbl_ProfessorUniversity.Location = new System.Drawing.Point(78, 172);
-            this.lbl_ProfessorUniversity.Name = "lbl_ProfessorUniversity";
-            this.lbl_ProfessorUniversity.Size = new System.Drawing.Size(45, 13);
-            this.lbl_ProfessorUniversity.TabIndex = 4;
-            this.lbl_ProfessorUniversity.Text = "Harvard";
+            this.lbl_ProfessorFullName.AutoSize = true;
+            this.lbl_ProfessorFullName.Location = new System.Drawing.Point(77, 146);
+            this.lbl_ProfessorFullName.Name = "lbl_ProfessorFullName";
+            this.lbl_ProfessorFullName.Size = new System.Drawing.Size(56, 13);
+            this.lbl_ProfessorFullName.TabIndex = 2;
+            this.lbl_ProfessorFullName.Text = "Pero Peric";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 199);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Title: ";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 146);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Full name: ";
             // 
-            // lbl_ProfessorTitle
+            // picBox_ProfessorPicture
             // 
-            this.lbl_ProfessorTitle.AutoSize = true;
-            this.lbl_ProfessorTitle.Location = new System.Drawing.Point(77, 199);
-            this.lbl_ProfessorTitle.Name = "lbl_ProfessorTitle";
-            this.lbl_ProfessorTitle.Size = new System.Drawing.Size(84, 13);
-            this.lbl_ProfessorTitle.TabIndex = 6;
-            this.lbl_ProfessorTitle.Text = "Senior Professor";
+            this.picBox_ProfessorPicture.Image = ((System.Drawing.Image)(resources.GetObject("picBox_ProfessorPicture.Image")));
+            this.picBox_ProfessorPicture.Location = new System.Drawing.Point(71, 53);
+            this.picBox_ProfessorPicture.Name = "picBox_ProfessorPicture";
+            this.picBox_ProfessorPicture.Size = new System.Drawing.Size(70, 70);
+            this.picBox_ProfessorPicture.TabIndex = 0;
+            this.picBox_ProfessorPicture.TabStop = false;
             // 
-            // lbl_LoggedAsMsg
+            // btn_LogIn
             // 
-            this.lbl_LoggedAsMsg.AutoSize = true;
-            this.lbl_LoggedAsMsg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_LoggedAsMsg.Location = new System.Drawing.Point(10, 21);
-            this.lbl_LoggedAsMsg.Name = "lbl_LoggedAsMsg";
-            this.lbl_LoggedAsMsg.Size = new System.Drawing.Size(79, 16);
-            this.lbl_LoggedAsMsg.TabIndex = 7;
-            this.lbl_LoggedAsMsg.Text = "Logged as: ";
-            this.lbl_LoggedAsMsg.Click += new System.EventHandler(this.label4_Click);
+            this.btn_LogIn.Location = new System.Drawing.Point(12, 509);
+            this.btn_LogIn.Name = "btn_LogIn";
+            this.btn_LogIn.Size = new System.Drawing.Size(125, 40);
+            this.btn_LogIn.TabIndex = 8;
+            this.btn_LogIn.Text = "Log in";
+            this.btn_LogIn.UseVisualStyleBackColor = true;
+            this.btn_LogIn.Click += new System.EventHandler(this.btn_LogIn_Click);
             // 
             // userControl_Classes1
             // 
@@ -276,7 +276,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbl_ProfessorUniversity;
         private System.Windows.Forms.Label lbl_LoggedAsMsg;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private UserControl_Classes userControl_Classes1;
     }
 }
