@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace GradeBookApp
 {
-    public partial class Form1 : Form
+    public partial class StartingForm : Form
     {
-        public Form1()
+        public StartingForm()
         {
             InitializeComponent();
+        }
+
+        private void btn_ExitApp_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
