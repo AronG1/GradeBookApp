@@ -45,7 +45,7 @@
             this.lbl_ProfessorFullName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.picBox_ProfessorPicture = new System.Windows.Forms.PictureBox();
-            this.btn_LogIn = new System.Windows.Forms.Button();
+            this.btn_Login = new System.Windows.Forms.Button();
             this.userControl_Classes1 = new GradeBookApp.UserControl_Classes();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_HeaderImage)).BeginInit();
             this.panel_ProfessorInfo.SuspendLayout();
@@ -210,15 +210,15 @@
             this.picBox_ProfessorPicture.TabIndex = 0;
             this.picBox_ProfessorPicture.TabStop = false;
             // 
-            // btn_LogIn
+            // btn_Login
             // 
-            this.btn_LogIn.Location = new System.Drawing.Point(12, 509);
-            this.btn_LogIn.Name = "btn_LogIn";
-            this.btn_LogIn.Size = new System.Drawing.Size(125, 40);
-            this.btn_LogIn.TabIndex = 8;
-            this.btn_LogIn.Text = "Log in";
-            this.btn_LogIn.UseVisualStyleBackColor = true;
-            this.btn_LogIn.Click += new System.EventHandler(this.btn_LogIn_Click);
+            this.btn_Login.Location = new System.Drawing.Point(12, 509);
+            this.btn_Login.Name = "btn_Login";
+            this.btn_Login.Size = new System.Drawing.Size(125, 40);
+            this.btn_Login.TabIndex = 8;
+            this.btn_Login.Text = "Login";
+            this.btn_Login.UseVisualStyleBackColor = true;
+            this.btn_Login.Click += new System.EventHandler(this.btn_LogIn_Click);
             // 
             // userControl_Classes1
             // 
@@ -234,7 +234,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.btn_LogIn);
+            this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.panel_ProfessorInfo);
             this.Controls.Add(this.btn_StudentWithdraw);
             this.Controls.Add(this.btn_ChangeStudentProperties);
@@ -268,7 +268,7 @@
         private System.Windows.Forms.Button btn_StudentWithdraw;
         private System.Windows.Forms.Panel panel_ProfessorInfo;
         private System.Windows.Forms.PictureBox picBox_ProfessorPicture;
-        private System.Windows.Forms.Button btn_LogIn;
+        private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_ProfessorFullName;
         private System.Windows.Forms.Label label1;

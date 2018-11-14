@@ -12,6 +12,7 @@ namespace GradeBookApp
 {
     public partial class StartingForm : Form
     {
+        Login formaLogin;
         public StartingForm()
         {
             InitializeComponent();
@@ -45,6 +46,18 @@ namespace GradeBookApp
         private void btn_LogIn_Click(object sender, EventArgs e)
         {
             // @TODO: open new form for log in
+
+            if (formaLogin == null)
+            {
+                formaLogin = new Login();
+            }
+
+            formaLogin.Show();
+            formaLogin.BringToFront();
+            formaLogin.Focus();
+            formaLogin.Activate();
+
+            
         }
     }
 }
