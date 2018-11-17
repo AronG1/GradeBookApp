@@ -57,20 +57,26 @@ namespace GradeBookApp
             SqlConnection cn_connection = new SqlConnection(connecionString);
 
             if (cn_connection.State != ConnectionState.Open) cn_connection.Open();
-
-            string sql_Text = "SELECT * FROM Professors";
-
             DataTable tbl = new DataTable();
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                SqlDataReader reader;
+                cmd.CommandText = "Login";
+                cmd.Parameters.AddWithValue("@username", txtBox_Username.Text);
+                cmd.Parameters.AddWithValue("@password", txtBox_Password.Text);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Connection = cn_connection;
 
-            SqlDataAdapter adapter = new SqlDataAdapter(sql_Text, cn_connection);
 
-            adapter.Fill(tbl);
+                reader = cmd.ExecuteReader();
 
+                cn_connection.Close();
 
-            //if (txtBox_Username.Text == )
-            //{
+                MessageBox.Show(reader.ToString());
 
-            //}
+            }
+
+            
         }
     }
 }
